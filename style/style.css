@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+/* Nav related style */
+
+#nav-parent{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1A0B2E;
+    padding: 16px;
+    border-bottom: 1px solid #412567;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+#nav-parent h2{
+    font-weight: 700;
+}
+
+#nav-parent .tech{
+    color: white;
+}
+
+#nav-parent .wave{
+    color: #9100F8;
+}
+
+.nav-menu .nav-link{
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.primary-btn{
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+    border-radius: 10000px;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.primary-btn:hover{
+    color: #F7E93F;
+}
+
+.hamburger-menu{
+    display: none;
+    width: 30px;
+}
+
+
+/* Media Quary for smaall device */
+
+@media screen and (max-width:576px){
+    .nav-menu{
+        display: none;
+    }
+    .btn-hidden{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    
+}
