@@ -156,6 +156,54 @@
 }
 
 
+/* About and rating section style */
+
+#about-parent{
+    background-color: #1A0B2E;
+}
+
+.about-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.about-content p{
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+.rating-content{
+    display: flex;
+    /* background-color: blue; */
+    border-top: 1px solid #FFFFFF;
+    max-width: 1200px;
+    margin: 80px auto;
+    gap: 80px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.rating-content h2{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.rating-content h4{
+    color: #FFFFFF;
+}
+
+
 /* Media Quary for smaall device */
 
 @media screen and (max-width:576px){
@@ -167,6 +215,13 @@
     }
     .hamburger-menu{
         display: block;
+    }
+
+    /* About section  */
+
+    .rating-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     
 }
