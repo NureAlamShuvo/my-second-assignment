@@ -39,7 +39,7 @@
     text-decoration: none;
 }
 
-#nav-parent h2{
+#nav-parent h1{
     font-weight: 700;
 }
 
@@ -73,6 +73,86 @@
 .hamburger-menu{
     display: none;
     width: 30px;
+}
+
+
+/* Bnner related style */
+
+#banner-parent{
+    text-align: center;
+}
+
+.banner-content{
+    padding: 100px 20px;
+}
+
+
+
+#banner-parent{
+    background-image: url(../assets/hero-bg.png);
+}
+
+.banner-img{
+    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.circle{
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.mic{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-content h2{
+    font-size: 3.75rem;
+    color: #FFFFFF;
+    font-weight: 800;
+    margin-top: 40px;
+}
+
+.banner-content p{
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.banner-btn{
+    background: transparent;
+    padding: 13px 20px;
+    border: 1px solid #00FF88;
+    border-radius: 10000px;
+    cursor: pointer;
+    color: #00FF88;
+    font-weight: 600;
+}
+
+.new-btn{
+    position: absolute;
+    top: 15%;
+    left: 85%;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    border: none;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-size: 1.12rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.banner-btn:hover{
+    background-color: white;
+    color: purple;
+    border: 1px solid purple;
 }
 
 
