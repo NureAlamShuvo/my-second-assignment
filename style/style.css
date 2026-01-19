@@ -274,6 +274,7 @@
 
 #featured-parent{
     background-color: #1A0B2E;
+    padding-bottom: 120px;
 }
 
 #featured-parent h2{
@@ -296,6 +297,11 @@
     background-color: #250D44;
     max-width: 380px;
     border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+
+.episode-card:hover{
+    transform: translateY(-10px);
 }
 
 .youtube-video{
@@ -376,6 +382,61 @@
     border-radius: 50%;
     margin-left: 8px;
 }
+
+
+/* Footer related style */
+
+#footer-section{
+    background-image: url(../assets/footer-bg.png);
+    padding: 120px;
+}
+
+.footer-container{
+    max-width: 1360px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;  
+    gap: 40px;
+    margin-top: 32px;
+}
+
+.media-icons{
+    display: inline;
+    display: flex;
+    justify-content: center;
+}
+
+.media-icons img{
+    display: inline;
+}
+
+#footer-section h1{
+    text-align: center;
+    font-size: 3.70rem;
+}
+
+.footer-tech{
+    color: white;
+}
+
+.footer-wave{
+    color: purple;
+}
+
+.media-icons h5{
+    margin-left: 8px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+#footer-section p{
+    text-align: center;
+    margin-top: 32px;
+    color: #FAFAFA;
+}
+
+
+
 /* Media Quary for smaall device */
 
 @media screen and (max-width:576px){
@@ -390,6 +451,10 @@
     }
 
     /* About section  */
+
+    .about-content{
+        padding: 10px;
+    }
 
     .rating-content{
         display: grid;
@@ -448,9 +513,26 @@
     .about-host{
         flex-direction: column;
         text-align: center;
-        /* padding-left: 20px; */
         margin-left: 20px;
         margin-right: 20px;
     }
+
+
+    /* Footer area */
+
+    #footer-section{
+        padding: 40px 20px;
+    }
+
+    #footer-section h1{
+        text-align: center;
+    }
+
+    .footer-container{
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     
 }
