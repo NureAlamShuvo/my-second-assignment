@@ -330,6 +330,52 @@
     font-weight: 600;
 }
 
+
+/* Host about area */
+
+.about-host{
+    display: flex;
+    background-color: #351165;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    gap: 24px;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.host-text{
+    max-width: 896px;
+}
+
+#host-parent h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    padding-top: 0;
+    font-weight: 700;
+}
+
+.host-text h3{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.host-text p{
+    color: #FFFFFF;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.host-text img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #533C72;
+    padding: 10.5px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
 /* Media Quary for smaall device */
 
 @media screen and (max-width:576px){
@@ -395,6 +441,16 @@
         font-size: 2rem;
         padding-top: 40px;
         padding-bottom: 16px;
+    }
+
+    /* about host */
+
+    .about-host{
+        flex-direction: column;
+        text-align: center;
+        /* padding-left: 20px; */
+        margin-left: 20px;
+        margin-right: 20px;
     }
     
 }
