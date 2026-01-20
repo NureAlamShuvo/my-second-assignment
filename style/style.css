@@ -80,17 +80,13 @@
 
 #banner-parent{
     text-align: center;
+    background-image: url(../assets/hero-bg.png);
 }
 
 .banner-content{
     padding: 100px 20px;
 }
 
-
-
-#banner-parent{
-    background-image: url(../assets/hero-bg.png);
-}
 
 .banner-img{
     position: relative;
@@ -99,7 +95,6 @@
 }
 
 .circle{
-    /* position: relative; */
     width: 100%;
     height: auto;
     display: flex;
@@ -393,6 +388,7 @@
     padding: 10.5px;
     border-radius: 50%;
     margin-left: 8px;
+    cursor: pointer;
 }
 
 
@@ -420,6 +416,7 @@
 
 .media-icons img{
     display: inline;
+    cursor: pointer;
 }
 
 #footer-section h1{
