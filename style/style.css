@@ -297,11 +297,23 @@
     background-color: #250D44;
     max-width: 380px;
     border-radius: 20px;
-    transition: transform 0.4s ease;
+    animation: EpisodeCard 3s ease-in-out infinite;
+}
+
+@keyframes EpisodeCard{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .episode-card:hover{
-    transform: translateY(-10px);
+    animation-play-state: paused;
 }
 
 .youtube-video{
